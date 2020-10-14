@@ -1,0 +1,51 @@
+body {
+  font: 16px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+.productList {
+  display: flex;
+  margin: auto;
+  width: fit-content;
+  border: 1px solid #999;
+  border-radius: .5em;
+  padding: 1em;
+  background: #eee;
+  box-shadow: 2px 2px 2px #666;
+}
+
+.productList li {
+  list-style-type: none;
+}
+
+.productList ul:nth-child(even) {
+  background: #ccc;
+}
+
+li.heading {
+  font-weight: 700;
+}
+
+.productList ul {
+  margin: 0;
+  padding: .5em 2em;
+}
+
+@media screen and (max-width: 600px) {
+  .productList {
+    font-size: .8em;
+  }
+ 
+  .productList ul {
+    padding: .5em .8em;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .productList {
+    font-size: .7em;
+  }
+}

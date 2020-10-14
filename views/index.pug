@@ -1,0 +1,23 @@
+extends layout
+
+block content
+  h1= title
+  
+  section.productList 
+    ul.list1
+      li.heading List ID 1
+      each item in list1
+        li #{item.name}
+    ul.list2
+      li.heading List ID 2
+      each item in list2
+        li #{item.name}
+    ul.list3
+      li.heading List ID 3
+      each item in list3
+        li #{item.name}
+    ul.list4
+      li.heading List ID 4
+      each item in list4
+        li #{item.name}
+
